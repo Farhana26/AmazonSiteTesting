@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.pru.amazon.SearchTest" duration-ms="21414" started-at="2020-03-20T12:23:48 EDT" finished-at="2020-03-20T12:24:09 EDT">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="21414" started-at="2020-03-20T12:23:48 EDT" finished-at="2020-03-20T12:24:09 EDT">
+      <class name="com.pru.amazon.SearchTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.pru.amazon.SearchTest@5ec0a365]" name="setup" is-config="true" duration-ms="10950" started-at="2020-03-20T12:23:48 EDT" finished-at="2020-03-20T12:23:59 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearch()[pri:0, instance:com.pru.amazon.SearchTest@5ec0a365]" name="testSearch" duration-ms="9521" started-at="2020-03-20T12:23:59 EDT" finished-at="2020-03-20T12:24:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.pru.amazon.SearchTest@5ec0a365]" name="close" is-config="true" duration-ms="898" started-at="2020-03-20T12:24:09 EDT" finished-at="2020-03-20T12:24:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.pru.amazon.SearchTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.pru.amazon.SearchTest -->
+</testng-results>
