@@ -12,7 +12,6 @@ import static com.pru.core.DatabaseConnection.getDatabaseConnection;
 
 public class SearchTest extends AbstractTestSetup {
 
-
   @Test
   public void testSearch() throws SQLException, ClassNotFoundException, InterruptedException {
     final List<String> items = getDatabaseConnection().getItems();
@@ -24,7 +23,6 @@ public class SearchTest extends AbstractTestSetup {
       Thread.sleep(1000);
     }
   }
-
 
   @Override
   protected String getUrl() {
