@@ -1,14 +1,15 @@
 package com.pru.core;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +17,8 @@ public abstract class AbstractTestSetup {
 
   //  public static final String CROME_DRIVER_PATH = "C:\\Users\\farhana rashid\\IdeaProjects\\AmazonPrime\\Amazon\\Driver\\chromedriver.exe";
   private static final String CHROME_DRIVER_PATH = "C:\\Users\\farhana rashid\\IdeaProjects\\Driver\\chromedriver.exe";
+//  private static final String CHROME_DRIVER_PATH = "/home/fasihul/Downloads/chromedriver_linux64/chromedriver";
+
   protected WebDriver driver;
 
   @Parameters({"browserName"})
