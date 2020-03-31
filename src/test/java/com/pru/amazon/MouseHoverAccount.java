@@ -24,6 +24,37 @@ public class MouseHoverAccount extends AbstractTestSetup {
     Thread.sleep(5000);
   }
 
+  @Test
+  public void testHoveAccountNListsAndClickYourOrder() throws Exception {
+    final Actions actions = new Actions(driver);
+
+    WebElement accountNLists = driver.findElement(By.id("nav-link-accountList"));
+    final Action mouseHoverAccountNLists = actions.moveToElement(accountNLists).build();
+    mouseHoverAccountNLists.perform();
+
+    WebElement yourAccount = driver.findElement(By.xpath("//a/span[text()='Your Orders']"));
+    final Actions clickYourAccount = actions.click(yourAccount);
+    clickYourAccount.perform();
+
+    Thread.sleep(5000);
+  }
+
+  /*@Test
+  public void testHoveAccountNListsAndClickYourDashButtons() throws Exception {
+    final Actions actions = new Actions(driver);
+
+    WebElement accountNLists = driver.findElement(By.id("nav-link-accountList"));
+    final Action mouseHoverAccountNLists = actions.moveToElement(accountNLists).build();
+    mouseHoverAccountNLists.perform();
+
+    WebElement yourAccount = driver.findElement(By.xpath("//a/span[text()='Your Dash Buttons']"));
+    final Actions clickYourAccount = actions.click(yourAccount);
+    clickYourAccount.perform();
+
+    Thread.sleep(5000);
+  }*/
+
+
   @Override
   protected String getUrl() {
     return "https://www.amazon.com";

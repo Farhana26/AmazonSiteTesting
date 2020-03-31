@@ -13,10 +13,7 @@ import java.util.List;
 public class TestingMousehover extends AbstractTestSetup {
      @Test
             public void testdrop() {
-
-
          WebElement searchBtn = driver.findElement(By.id("nav-link-accountList"));
-
          Actions actions = new Actions(driver);
          //action.moveToElement(searchBtn).click().build().perform();
          actions.moveToElement(searchBtn);
